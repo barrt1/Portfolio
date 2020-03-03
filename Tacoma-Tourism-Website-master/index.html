@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<head>
+	<!-- we need a title -->
+  	<meta charset="utf-8" />
+  	<title>Tacoma Tourism Homepage</title>
+  	<script src="script.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css" >
+	<style> body {font-family: 'Open Sans', sans-serif;}	</style>
+	<img src="mount.jpg" alt="Mount Rain" width="100%">
+
+  	 <nav>
+              <ul>
+                  <!-- things.html will be a drop down menu -->
+					  <div class="navbar">
+					  <a href="index.html">Home</a>
+					  <a href="placesToStay.html">Places To Stay</a>
+					  <a href="thingsToEat.html">Things To Eat</a>
+					  <div class="dropdown">
+					    <button class="dropbtn">Things To Do
+					      <i class="fa fa-caret-down"></i>
+					    </button>
+					    <div class="dropdown-content">
+					      <a href="Museums.html">Museums</a>
+					      <a href="Point_Ruston.html">Point Ruston</a>
+					      <a href="tacoma_dome.html">Tacoma Dome</a>
+                <a href="point_defiance.html">Point Defiance Zoo</a>
+					    </div>
+					  </div> 
+					  <a href="newForm.html">Contact Us</a>
+					</div>
+              </ul>
+        </nav>
+</head>
+<body>
+<h2><br>Welcome To Tacoma!<br></h2>
+<p align="center" font-size="24px"><br> Resting on the banks of the Puget Sound, Tacoma was founded in 1875. The area was inhabited for thousands of years by  <br> American Indians, predominantly the Puyallup people, who lived in settlements on the delta.</p>
+
+<section class="slideshow-container"> <!-- Created a slideshow of various gifs using javascript-->
+<br> <br> <br>
+  <!-- Full-width images with number and caption text -->
+  <section class="mySlides fade">
+    <section class="numbertext">1 / 4</section>
+    <img src="tacoma.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">You'll Like Tacoma</section>
+  </section>
+
+  <section class="mySlides fade">
+    <section class="numbertext">2 / 4</section>
+    <img src="dome.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">Tacoma Dome</section>
+  </section>
+
+  <section class="mySlides fade">
+    <section class="numbertext">3 / 4</section>
+    <img src="water.png" alt ="something goes here" style="width:800px;height:400px;border:0;">
+    <section class="text">Water Front </section>
+  </section>
+
+ <section class="mySlides fade">
+    <section class="numbertext">4 / 4</section>
+    <img src="uw.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">UW Tacoma</section>
+  </section>
+  <!-- Next and previous buttons -->
+  
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+<br>
+
+<!-- The dots/circles -->
+<section style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</section>
+<br><br><br><br>
+	<h2>You'll Like Tacoma</h2>
+	<p class="center">Tacoma has at least two well-known slogans to hang its hat on: The City of Destiny and You’ll Like Tacoma.<br> While the original “You’ll Like Tacoma” sign stood on the shores of Lake Union and 110 years later the new LED sign depicting a heart <br> made up of Tacoma's area code (253) still assures visitors that you'll like Tacoma.</p> <br>
+	
+	<h2>The Tacoma Dome</h2> 
+	<p class="center">Built in 1983, the Tacoma Dome is one of the largest wood domed structures in the world. It holds all sorts of <br> events from local highschool sport tournaments to faumous musicians and bands, to political ralleys. </p> <br>
+
+
+	<h2> Water Front</h2>
+	<p class="center">Housing the Museum of Glass and The TAM (tacoma art museum), the water fronts port of Tacoma marine cargo operations is among <br> the largest in the United States, and was merged with the Port of Seattle's in 2015 to form the Northwest Seaport Alliance.</p> <br>
+
+	<h2>University of Washington, Tacoma</h2> 
+	<p class="center">The University of Washingtons satellite campus was founded in 1997 and since then has grown five times in size.<br> UW Tacoma is an urban-serving university, closely linked with Tacoma and the South Puget Sound. The 46-acre campus footprint is <br> located on a hillside overlooking the Port of Tacoma and Mount Rainier, on the southern edge of downtown Tacoma,<br> next to museums and the beautifully reconstructed Union Station.</p> <br>
+	
+<script>
+ var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+
+
+<br><br><br><br>
+<div class="footer">
+<strong> <center> Tacoma Tourism &copy 2020</strong>
+<p>
+	<a href="https://facebook.com/animedomain"><img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="facebook logo" style="width:50px;height:50px;border:0;"></a>  	
+    <a href="https://instagram.com/animedomain"><img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png" alt="instagram logo" style="width:50px;height:50px;border:0;"></a>
+    <a href="https://twitter.com/animedomain"><img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png" alt="twitter logo" style="width:50px;height:50px;border:0;"></a>  
+	  </center>
+</p>	  
+</footer>
+</div>	
+	
+</body>
+
+</html>
+
+
+</body>
+</html>
+  	

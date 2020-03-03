@@ -1,0 +1,383 @@
+h1 {
+  text-align: center;
+  font-family:"Open Sans", Helvetica, Arial, sans-serif;
+}
+
+h2 { 
+  text-align: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  
+ }
+
+p.center  {
+	text-align: center;
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.form  {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	color:#777;
+	
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+#wrapper {width:60%;height:100%; min-width:1000px; min-height:800px;
+background-color: white;
+border : 2px solid black; 
+margin-left:auto;margin-right:auto;padding:20px;
+-webkit-border-top-left-radius: 25px;
+-webkit-border-top-right-radius: 25px;
+-webkit-border-bottom-left-radius: 25px;
+-webkit-border-bottom-right-radius: 25px;
+-moz-border-radius-topleft: 25px;
+-moz-border-radius-topright: 25px;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+opacity:0.8;
+filter: alpha(opacity=10);
+}
+
+#wrapper2 {width:95%;height:100%; min-width:960px; min-height:640px;
+background-color: beige;
+opacity:1
+filter: alpha(opacity=10);
+float:center;
+margin-right:25px;
+margin-left:auto;margin-right:auto;padding:20px;
+-webkit-border-top-left-radius: 25px;
+-webkit-border-top-right-radius: 25px;
+-webkit-border-bottom-left-radius: 25px;
+-webkit-border-bottom-right-radius: 25px;
+-moz-border-radius-topleft: 25px;
+-moz-border-radius-topright: 25px;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+}
+#overview {
+	float:left;
+	width: 25%;
+	height: 23%;
+	padding-right: 15px;
+	margin-left: 10px;
+	overflow: auto;
+}
+
+#construction {
+	float:left;
+	width: 25%;
+	height: 23%;
+	padding-right: 15px;
+	margin-left: 10px;
+}
+#event {
+	float:left;
+	width: 25%;
+	height: 23%;
+	padding-right: 15px;
+	margin-left: 10px;
+}
+
+p.text-information {
+	
+}
+h3.td-header {
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 30px;
+}
+div.overview-section {
+	clear: both;
+	margin-top: 10px;
+	overflow: auto;
+}
+div.history-section{
+	clear: both;
+	margin-top: 8%;
+	overflow: auto;
+}
+div.event-section {
+	clear: both;
+	margin-top: 8%;
+	overflow: auto;
+}
+h1.td-title {
+	font-size: 40px;
+}
+
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp (Slideshow code cite) */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#rotate {
+  transform: rotate(-90deg);
+}

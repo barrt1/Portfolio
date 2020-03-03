@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Places to Visit </title>		
+	<style> body {font-family: 'Open Sans', sans-serif; }
+		
+	</style>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	
+ 
+
+
+<img src="mount.jpg" alt="Mount Rain" width = "100%">
+
+     <nav>
+              <ul>
+                  <!-- things.html will be a drop down menu -->
+            <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="placesToStay.html">Places To Stay</a>
+            <a href="thingsToEat.html">Things To Eat</a>
+            <div class="dropdown">
+              <button class="dropbtn">Things To Do
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Museums.html">Museums</a>
+                <a href="Point_Ruston.html">Point Ruston</a>
+                <a href="tacoma_dome.html">Tacoma Dome</a>
+                <a href="point_defiance.html">Point Defiance Zoo</a>
+              </div>
+            </div> 
+            <a href="newForm.html">Contact Us</a>
+          </div>
+              </ul>
+        </nav>
+		<br> 
+
+<h2>Here are some unique and luxurious places to lodge at while you visit Tacoma
+<p> We came up with a list of 4 <strong>must visit</strong> locations </p> </h2>
+
+<section class="slideshow-container"> <!-- Created a slideshow of various gifs using javascript-->
+<br> <br> <br> <br>
+  <!-- Full-width images with number and caption text -->
+  <section class="mySlides fade">
+    <section class="numbertext">1 / 4</section>
+    <img src="https://www.silvercloud.com/images/tacoma/mastheads/contact.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">Silver Cloud Inn</section>
+  </section>
+
+  <section class="mySlides fade">
+    <section class="numbertext">2 / 4</section>
+    <img src="https://www.geigervictorian.com/images/31888999-1f0d-4cd2-8568-eeaf2a7d2a65.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">The Geiger Bed and Breakfast</section>
+  </section>
+
+  <section class="mySlides fade">
+    <section class="numbertext">3 / 4</section>
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/190/190975090.jpg" alt ="something goes here" style="width:800px;height:400px;border:0;">
+    <section class="text">The Villa Bed and Breakfast </section>
+  </section>
+
+ <section class="mySlides fade">
+    <section class="numbertext">4 / 4</section>
+    <img src="https://content.r9cdn.net/rimg/himg/92/3b/96/ostrovok-7724095-8eb8ec77d81ca828960697ea96c2404b22ba3202-366534.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">Hotel Murano</section>
+  </section>
+  <!-- Next and previous buttons -->
+  
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+<br>
+
+<!-- The dots/circles -->
+<section style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</section>
+<br><br><br><br>
+	<h2> 1. Silver Cloud Inn </h2>
+	<p class="center"> Located in Tacoma’s Old Town community is the Silver Cloud Inn Tacoma Waterfront, Tacoma’s only waterfront hotel. <br> Our hotel is conveniently located just two miles north of downtown Tacoma’s amazing museum district, and is only ten minutes from Tacoma Dome & Convention Center. </p> <br>
+	<h2> 2. The Geiger Bed and Breakfast </h2> 
+	<p class="center"> The Geiger Victorian Bed and Breakfast is located in the North Slope Historic District close to downtown, Tacoma Dome, Museum <br>of Glass, Convention Center, Tacoma General Hospital, Mary Bridge Hospital, St. Joseph Hospital, University of Puget Sound, waterfront restaurants <br>and Annie Wright School. Easy access to Interstate 5 and Olympic peninsula.</p> <br>
+	<h2> 3. The Villa Bed and Breakfast</h2>
+	<p class="center"> A luxurious Tacoma Bed & Breakfast, owners Toni and Martin invite you to taste a bit of old-world Italy <br>Tacoma B and B, Washington Bed and Breakfast, Seattle Bed and Breakfast </p> <br>
+	<h2> 4. Hotel Murano </h2> 
+	<p class="center"> Welcome to Hotel Murano, an artful downtown Tacoma hotel located steps from the Tacoma Convention Center and two to three blocks from the <br>city’s best museums and restaurants. In honor of Tacoma’s place in the American glass art movement, Hotel Murano pairs luxurious guestrooms and <br>well-appointed event space with a museum-worthy collection of glass art from around the world. </p> <br>
+	
+<script>
+ var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+
+
+<br><br><br><br>
+<div class="footer">
+<strong> <center> Tacoma Tourism &copy 2020</strong>
+<p>
+	<a href="https://facebook.com/animedomain"><img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="facebook logo" style="width:50px;height:50px;border:0;"></a>  	
+    <a href="https://instagram.com/animedomain"><img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png" alt="instagram logo" style="width:50px;height:50px;border:0;"></a>
+    <a href="https://twitter.com/animedomain"><img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png" alt="twitter logo" style="width:50px;height:50px;border:0;"></a>  
+	  </center>
+</p>	  
+</footer>
+</div>	
+	
+</body>
+
+</html>

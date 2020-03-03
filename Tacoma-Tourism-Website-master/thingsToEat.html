@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Things to Eat</title>		
+	<style> body {font-family: 'Open Sans', sans-serif; }
+		
+	</style>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	
+ 
+
+
+<img src="mount.jpg" alt="Mount Rain" width = "100%">
+
+     <nav>
+              <ul>
+                  <!-- things.html will be a drop down menu -->
+            <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="placesToStay.html">Places To Stay</a>
+            <a href="thingsToEat.html">Things To Eat</a>
+            <div class="dropdown">
+              <button class="dropbtn">Things To Do
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="Museums.html">Museums</a>
+                <a href="Point_Ruston.html">Point Ruston</a>
+                <a href="tacoma_dome.html">Tacoma Dome</a>
+                <a href="point_defiance.html">Point Defiance Zoo</a>
+              </div>
+            </div> 
+            <a href="newForm.html">Contact Us</a>
+          </div>
+              </ul>
+      </nav>
+</head>
+		<br> 
+
+<h2>You'll like Tacoma, and you'll love the food.
+<p>Here is a list of the tastiest, locally owned eataries in Tacoma</h2>
+
+<section class="slideshow-container"> <!-- Created a slideshow of various gifs using javascript-->
+<br> <br> <br> <br>
+  <!-- Full-width images with number and caption text -->
+  <section class="mySlides fade">
+    <section class="numbertext">1 / 4</section>
+    <img src="food1.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">Marzano's Restaurant</section>
+  </section>
+
+  <section class="mySlides fade">
+    <section class="numbertext">2 / 4</section>
+    <img src="food2.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">Duke's Chowder House</section>
+  </section>
+
+  <section class="mySlides fade">
+    <section class="numbertext">3 / 4</section>
+    <img src="food3.jpg" alt ="something goes here" style="width:800px;height:400px;border:0;">
+    <section class="text">Pacific Grill</section>
+  </section>
+
+ <section class="mySlides fade">
+    <section class="numbertext">4 / 4</section>
+    <img src="food4.jpg" alt ="something goes here"  style="width:800px;height:400px;border:0;">
+    <section class="text">The Swiss Restaurant & Pub
+</section>
+  </section>
+  <!-- Next and previous buttons -->
+  
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+<br>
+
+<!-- The dots/circles -->
+<section style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</section>
+<br><br><br><br>
+	<h2>Marzano's Restaurant</h2>
+	<p class="center"><i>"Since opening in 1988, Marzano has been treating South Sound diners to our interpretation of Italian cuisine based <br> solidly on traditions of the Veneto region in Northern Italy." -owners Elisa and Brian Marzano</i> With an overall Trip Advisor rating <br> of 4.5 stars, Marzanos has got to be on your must-do list.</p> <br>
+
+	<h2>Duke's Chowder House</h2> 
+	<p class="center"><i>“If you're looking for a welcoming atmosphere, great service, and incredible food, you've come to the right place.” - Duke</i><br>Also known as the <i>“Tastiest seafood in town”</i>, Duke's food also comes from 100% sustainable sources. <br>Enjoy your meal while sitting on Lake Union, and enjoy half off bottles of wine every Monday. Rating 4.5 stars. </p> <br>
+
+
+	<h2>The Pacific Grill</h2>
+	<p class="center">Prided on being Tacomas most award-winning resatraunt, the Pacific Grill deserves your attention. <i>"A stunning urban space, at home in any major city that is perfect for romance,  <br> great conversation and world-class food." - unknown </i> Also earing 4.5 stars, make sure you check out their wide variety of eats.</p> <br>
+
+
+	<h2>The Swiss Restaurant & Pub</h2> 
+	<p class="center"><i>“You're a stranger here but once” -The Swiss</i> This is more than just a restaraunt and pub, this is a place to gather. <br> With minors welcome until 9pm, The Swiss holds events regularly and is loved by the locals.<br> Their extensive food and drink menu will bring you in, and you'll  want to stay for another round of pool. Rating 4 stars on Trip Advisor.</p> <br>
+	
+<script>
+ var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script> 
+
+
+<br><br><br><br>
+<div class="footer">
+<strong> <center> Tacoma Tourism &copy 2020</strong>
+<p>
+	<a href="https://facebook.com/animedomain"><img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="facebook logo" style="width:50px;height:50px;border:0;"></a>  	
+    <a href="https://instagram.com/animedomain"><img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png" alt="instagram logo" style="width:50px;height:50px;border:0;"></a>
+    <a href="https://twitter.com/animedomain"><img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png" alt="twitter logo" style="width:50px;height:50px;border:0;"></a>  
+	  </center>
+</p>	  
+</footer>
+</div>	
+	
+</body>
+
+</html>
